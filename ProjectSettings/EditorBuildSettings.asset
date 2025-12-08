@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JOGO.unity
     guid: 1e22830b61373c14c80f941ea4f38355
+  - enabled: 1
+    path: Assets/Scenes/CONFG.unity
+    guid: 2680efe85f398fe40b26b642e59c4e3c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

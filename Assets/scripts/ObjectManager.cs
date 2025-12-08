@@ -1,8 +1,20 @@
 using UnityEngine;
 using TMPro;
 
-public class ObjectManager : MonoBehaviour
+public class BotoesMenu : MonoBehaviour
 {
+
+	public string nomeDoFilho = "Configurações";
+
+
+  void Start()
+    {
+        Transform filho = transform.Find(nomeDoFilho);
+		filho.gameObject.SetActive(false);
+    }
+
+
+
     // Declara variável de referência para o texto de UI 
     public TextMeshProUGUI clickerCountText;
     

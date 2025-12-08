@@ -2,10 +2,33 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Botoesmenu : MonoBehaviour
+public class Botoesmenu : MonoBehaviour {
 
   
-{
+	public string nomeDoFilho = "Configurações";
+
+
+  	void Start()
+    {
+
+        FecharConfig();
+    }
+
+
+	public void mostrarConfig()
+	{
+ 	      Transform filho = transform.Find(nomeDoFilho);
+		filho.gameObject.SetActive(true);
+	}
+
+	
+	public void FecharConfig()
+ 
+     {
+        Transform filho = transform.Find(nomeDoFilho);
+		filho.gameObject.SetActive(false);
+     }
+
 	public void IniciarJogo()
 	{
 
@@ -21,5 +44,12 @@ public class Botoesmenu : MonoBehaviour
 	{
 		Application.Quit();
 	}
+
+	
+	public void Configuracoes()
+ 	{
+		SceneManager.LoadScene("CONFG");
+	}
+
 
 }
